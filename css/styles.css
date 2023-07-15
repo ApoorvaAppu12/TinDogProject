@@ -1,0 +1,224 @@
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+#title{
+    background-color: #ff4c68;
+    color: white;
+    
+}
+
+h1{
+    font-family: "Montserrat-Black", sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: 800;
+    
+   
+}
+h2{
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    
+    }
+
+p{
+    color: #8f8f8f;
+}
+
+.container-fluid{
+    padding: 3% 15% 7%;  
+   /* here i am giving 7 % to push down the div little bit */
+}
+
+
+
+
+
+/* navbar */
+
+.navbar{
+padding:0 0 4.5rem;
+
+}
+.navbar-brand{
+    font-family: Ubuntu;
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-family: "Montserrat-Light", sans-serif;
+    font-size: 1.2rem;
+}
+/* four spaces for all the buttons */
+.download-button{
+    margin: 5% 3% 5% 0%;
+}
+
+/* title image */
+.title-image{
+    width: 60%;
+    /* transform rotate is used to rotate the image */
+    transform: rotate(25deg);
+    /* here i am keeping the position to absolute and features to relative */
+    position: absolute;
+    right: 30%;
+    /* keeping the right as 30% in order to make image to right little bit */
+    
+   
+}
+
+/* feature section */
+
+.font-awesome{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    color: #ff4c68;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+.font-awesome:hover{
+    color: #ffdf6b;
+}
+
+#features{
+
+    /* here i am giving features position as relative and title image as absolute and keeping the z index to 
+    1 so that it will come on the top , u can also refer to chart to decide */
+    padding: 7% 15%;
+    line-height: 1.5rem;
+    font-family: "Montserrat-Bold", sans-serif;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.feature-1{
+    text-align: center;
+    font-weight: 800;
+    
+}
+ 
+
+.feature-a{
+    text-align: center;
+}
+
+/* testimonial section */
+
+#testimonials{
+  
+    text-align: center;
+    background-color: #ef8172;
+    color: white;
+}
+
+.testimonial-image{
+   width:20%;
+   border-radius: 100%;
+   margin: 20px;
+
+}
+
+
+
+/* press section */
+
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+.carousel-item{
+  
+    padding: 7% 15%;
+
+}
+
+
+/* Pricing section */
+
+#pricing{
+    padding: 100px;
+    text-align: center;
+    line-height: 2;
+   
+}
+
+.pricing-column{
+    padding: 3% 2%;
+   
+}
+
+/* Media Queries  */
+
+/* here we are using the concept of media queries to make the website more responsive ,suppose if ur screen size is 
+992 px or lesser than that than this line of code will get activated , suppose if u used min-width:992px than 
+it will see the size of the screen 992 px will or greater than that than it will get executed or else u can 
+also combine both min and max as well which will define the range , i.e in between that range the code will get
+executed*/
+@media(max-width:992px) {
+   #title{
+       text-align: center;
+   }
+
+
+    .title-image{
+        /* after keeping the position to static the image will become straight and again rotating it to
+        normal i.e straight */
+    position: static;
+    transform: rotate(0);
+}
+}
+/* call to action */
+
+#cta{
+    background-color: #ff4c68;
+   text-align: center;
+   font-family: "Montserrat", sans-serif;
+   font-weight: bolder;
+   color: white;
+    padding: 5% 15% 15%;
+}
+
+.ctah3{
+    font-size: 50px;
+}
+
+.ctadownload{
+    margin: 5% 3% 0% 0%;
+}
+
+/* footer section */
+
+#footer{
+    text-align: center;
+    padding: 80px 2px 20px ;
+    background-color: white;
+}
+
+.footericons{
+    padding: 20px;
+}
+
+.copyright{
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+/* some coding effeciency techniques always follow DRY(do no repaeat your code) and not follow WET(we enjoy typing) */
